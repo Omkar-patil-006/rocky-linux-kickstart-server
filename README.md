@@ -58,10 +58,10 @@ vi /etc/dhcp/dhcpd.conf
 
 ```bash
 subnet 192.168.0.0 netmask 255.255.255.0 {
-  range 192.168.0.100 192.168.0.200;
+  range 192.168.0.100 192.168.0.200;      **Your IP Range**
   option routers 192.168.0.1;
   filename "pxelinux.0";
-  next-server 192.168.0.170;
+  next-server 192.168.0.170;             ** System IP Address**
 }
 ```
 
